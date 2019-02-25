@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pelk.controllers.mainController">
+   <children>
+      <Button fx:id="PathToFileBtn" layoutX="309.0" layoutY="101.0" mnemonicParsing="false" onMouseClicked="#selectFile" prefHeight="45.0" prefWidth="111.0" text="Выбрать файл" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="101.0" />
+      <Label fx:id="pathToFile" alignment="CENTER" layoutX="132.0" layoutY="101.0" prefHeight="45.0" prefWidth="152.0" text="Путь к файлу" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="132.0" AnchorPane.topAnchor="101.0" />
+      <Label layoutX="132.0" layoutY="178.0" prefHeight="45.0" prefWidth="152.0" text="Колонка артикула(считаем с 0)" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="132.0" AnchorPane.topAnchor="178.0" />
+      <TextField fx:id="sku" layoutX="309.0" layoutY="178.0" prefHeight="45.0" prefWidth="111.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="178.0" />
+      <Label layoutX="132.0" layoutY="245.0" prefHeight="45.0" prefWidth="152.0" text="Колонка с ценами(тоже с 0)" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="132.0" AnchorPane.topAnchor="245.0" />
+      <TextField fx:id="price" layoutX="309.0" layoutY="245.0" prefHeight="45.0" prefWidth="111.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="245.0" />
+      <Label alignment="CENTER" layoutX="132.0" layoutY="307.0" prefHeight="45.0" prefWidth="152.0" text="Название нового файла" textAlignment="CENTER" AnchorPane.bottomAnchor="174.0" AnchorPane.leftAnchor="132.0" />
+      <TextField fx:id="output" layoutX="309.0" layoutY="307.0" prefHeight="45.0" prefWidth="111.0" AnchorPane.bottomAnchor="174.0" AnchorPane.rightAnchor="116.0" />
+      <Button layoutX="208.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#startParse" prefHeight="45.0" prefWidth="132.0" text="Начать" AnchorPane.bottomAnchor="84.0" />
+   </children>
+</AnchorPane>
